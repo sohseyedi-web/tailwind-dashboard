@@ -1,9 +1,13 @@
-import React from 'react'
+import Dashboard from "./layout/Dashboard";
+import Sidebar from "./Sidebar";
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
-    <div>Layout</div>
-  )
-}
+    <section className="flex">
+      <Sidebar />
+      <Dashboard />
+    </section>
+  );
+};
 
-export default Layout
+export default Layout;
