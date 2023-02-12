@@ -1,7 +1,7 @@
 import Dashboard from "./layout/Dashboard";
 import Sidebar from "./Sidebar";
 
-const Layout = ({ children }) => {
+const Layout = () => {
   return (
     <section className="flex">
       <Sidebar />
