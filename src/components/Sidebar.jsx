@@ -14,7 +14,7 @@ const data = [
 const Sidebar = () => {
   return (
     <aisde
-      className={`w-[50px] md:w-[14%] py-3 px-2 bg-white border-l border-gray-300 border-solid  transition-all relative duration-300`}
+      className={`w-[50px] lg:w-[14%] py-3 px-2 bg-white border-l border-gray-300 border-solid  transition-all relative duration-300`}
     >
       <ul className="pt-1">
         {data.map((item, index) => (
@@ -27,7 +27,7 @@ const Sidebar = () => {
               {item.icon}
             </span>
             <span
-              className={`origin-left duration-200 transition-all hidden md:flex`}
+              className={`origin-left duration-200 transition-all hidden lg:flex`}
             >
               {item.text}
             </span>

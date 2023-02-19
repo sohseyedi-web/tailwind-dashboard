@@ -5,8 +5,8 @@ import Cover from "../../assets/Crypto.jpg";
 const Dashboard = () => {
   return (
     <main className="text-center w-[85%]  mx-auto pt-6 ">
-      <div className="flex px-2 ">
-        <div className="w-[22%] h-[40%] bg-white shadow-sm rounded-xl px-2 border-solid border-2 border-[#d7dce8]">
+      <div className="flex px-2 lg:flex-row flex-col">
+        <div className="lg:w-[22%] w-full mb-5 h-[40%] bg-white shadow-sm rounded-xl px-2 border-solid border-2 border-[#d7dce8]">
           <div className="flex items-center justify-between py-2 text-[#aaa]">
             <h5>اطلاعات شناسایی</h5>
             <span>
@@ -69,7 +69,7 @@ const Dashboard = () => {
             </p>
           </div>
         </div>
-        <div className="w-[76%] mr-4">
+        <div className="lg:w-[76%] w-full lg:mr-4 mr-0">
           <div className="flex items-center justify-between mb-2">
             <h5 className="opacity-90">آثار من :</h5>
             <div className="w-7 h-7 rounded cursor-pointer bg-white flex items-center justify-center border-solid border-2 border-[#d7dce8]">
@@ -87,21 +87,21 @@ const Dashboard = () => {
               </span>
             </div>
             <div className="flex justify-start flex-wrap">
-              <div className="w-[25%] ml-4  mb-2 relative">
+            <div className="lg:w-[25%] w-[35%] ml-4  mb-2 relative">
                 <img
                   src={Cover}
                   className="w-full object-cover h-[100px] rounded"
                   alt=""
                 />
               </div>
-              <div className="w-[25%] ml-4 mb-2 relative">
+              <div className="lg:w-[25%] w-[35%] ml-4 mb-2 relative">
                 <img
                   src={Cover}
                   className="w-full object-cover h-[100px] rounded"
                   alt=""
                 />
               </div>
-              <div className="w-[25%] ml-4 mb-2 relative">
+              <div className="lg:w-[25%] hidden ml-4 mb-2 relative">
                 <img
                   src={Cover}
                   className="w-full object-cover h-[100px] rounded"
@@ -121,21 +121,21 @@ const Dashboard = () => {
               </span>
             </div>
             <div className="flex justify-start flex-wrap">
-              <div className="w-[25%] ml-4  mb-2 relative">
+            <div className="lg:w-[25%] w-[35%] ml-4  mb-2 relative">
                 <img
                   src={Cover}
                   className="w-full object-cover h-[100px] rounded"
                   alt=""
                 />
               </div>
-              <div className="w-[25%] ml-4 mb-2 relative">
+              <div className="lg:w-[25%] w-[35%] ml-4 mb-2 relative">
                 <img
                   src={Cover}
                   className="w-full object-cover h-[100px] rounded"
                   alt=""
                 />
               </div>
-              <div className="w-[25%] ml-4 mb-2 relative">
+              <div className="lg:w-[25%] hidden ml-4 mb-2 relative">
                 <img
                   src={Cover}
                   className="w-full object-cover h-[100px] rounded"
@@ -155,21 +155,21 @@ const Dashboard = () => {
               </span>
             </div>
             <div className="flex justify-start flex-wrap">
-              <div className="w-[25%] ml-4  mb-2 relative">
+              <div className="lg:w-[25%] w-[35%] ml-4  mb-2 relative">
                 <img
                   src={Cover}
                   className="w-full object-cover h-[100px] rounded"
                   alt=""
                 />
               </div>
-              <div className="w-[25%] ml-4 mb-2 relative">
+              <div className="lg:w-[25%] w-[35%] ml-4 mb-2 relative">
                 <img
                   src={Cover}
                   className="w-full object-cover h-[100px] rounded"
                   alt=""
                 />
               </div>
-              <div className="w-[25%] ml-4 mb-2 relative">
+              <div className="lg:w-[25%] hidden ml-4 mb-2 relative">
                 <img
                   src={Cover}
                   className="w-full object-cover h-[100px] rounded"
@@ -178,7 +178,7 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
-          <div className="w-[20%] my-7 rounded-xl bg-white shadow-md py-3">
+          <div className="lg:w-[20%] w-1/2 my-7 rounded-xl bg-white shadow-md py-3">
             <div className=" flex items-center justify-center">
               <div className="text-[#1a5cff]">افزودن دسته بندی</div>
               <span>
