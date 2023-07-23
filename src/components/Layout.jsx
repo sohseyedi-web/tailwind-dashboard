@@ -1,11 +1,14 @@
-import Dashboard from "./layout/Dashboard";
 import Sidebar from "./Sidebar";
+import Navbar from "./Navbar";
 
-const Layout = () => {
+const Layout = ({ children }) => {
   return (
-    <section className="flex">
-      <Sidebar />
-      <Dashboard />
+    <section>
+      <Navbar />
+      <div className="flex">
+        <Sidebar />
+        {children}
+      </div>
     </section>
   );
 };

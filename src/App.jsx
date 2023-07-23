@@ -1,11 +1,12 @@
-import Navbar from "./components/Navbar";
-import Layout from "./components/Layout";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Dashboard from "./components/layout/Dashboard";
 function App() {
   return (
-    <>
-      <Navbar />
-      <Layout />
-    </>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Dashboard />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 

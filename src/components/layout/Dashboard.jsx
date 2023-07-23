@@ -1,10 +1,14 @@
 import * as RiIcon from "react-icons/ri";
 import Profile from "../../assets/123.jpg";
 import Cover from "../../assets/Crypto.jpg";
+import Layout from "../Layout";
 
 const Dashboard = () => {
   return (
-    <main className="text-center w-[85%]  mx-auto pt-6 ">
+    
+    <Layout>
+      <section className="flex-1 h-screen overflow-y-auto">
+      <main className="text-center w-[95%]  mx-auto pt-6 ">
       <div className="flex px-2 lg:flex-row flex-col">
         <div className="lg:w-[22%] w-full mb-5 h-[40%] bg-white shadow-sm rounded-xl px-2 border-solid border-2 border-[#d7dce8]">
           <div className="flex items-center justify-between py-2 text-[#aaa]">
@@ -178,6 +182,40 @@ const Dashboard = () => {
               </div>
             </div>
           </div>
+          <div className="w-full my-3 rounded-xl bg-white shadow-md py-3 px-4">
+            <div className="flex  justify-start items-start mb-2">
+              <div className="text-[#1a5cff]">ظراحی و گرافیک</div>
+              <span className="mx-3">
+                <RiIcon.RiPencilFill size={20} />
+              </span>
+              <span className="text-red-600">
+                <RiIcon.RiDeleteBin5Line size={20} />
+              </span>
+            </div>
+            <div className="flex justify-start flex-wrap">
+              <div className="lg:w-[25%] w-[35%] ml-4  mb-2 relative">
+                <img
+                  src={Cover}
+                  className="w-full object-cover h-[100px] rounded"
+                  alt=""
+                />
+              </div>
+              <div className="lg:w-[25%] w-[35%] ml-4 mb-2 relative">
+                <img
+                  src={Cover}
+                  className="w-full object-cover h-[100px] rounded"
+                  alt=""
+                />
+              </div>
+              <div className="lg:w-[25%] hidden ml-4 mb-2 relative">
+                <img
+                  src={Cover}
+                  className="w-full object-cover h-[100px] rounded"
+                  alt=""
+                />
+              </div>
+            </div>
+          </div>
           <div className="lg:w-[20%] w-1/2 my-7 rounded-xl bg-white shadow-md py-3">
             <div className=" flex items-center justify-center">
               <div className="text-[#1a5cff]">افزودن دسته بندی</div>
@@ -189,6 +227,8 @@ const Dashboard = () => {
         </div>
       </div>
     </main>
+      </section>
+    </Layout>
   );
 };
 

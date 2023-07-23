@@ -14,7 +14,7 @@ const data = [
 const Sidebar = () => {
   return (
     <aisde
-      className={`w-[50px] lg:w-[14%] py-3 px-2 bg-white border-l border-gray-300 border-solid  transition-all relative duration-300`}
+      className={`w-[50px] overflow-hidden lg:w-[14%] py-3 px-2 bg-white border-l border-gray-300 border-solid h-screen transition-all duration-300`}
     >
       <ul className="pt-1">
         {data.map((item, index) => (
@@ -39,3 +39,4 @@ const Sidebar = () => {
 };
 
 export default Sidebar;
+
