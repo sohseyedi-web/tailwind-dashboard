@@ -1,16 +1,16 @@
 import Sidebar from "./Sidebar";
 import Navbar from "./Navbar";
 
-const Layout = ({ children }) => {
+const Container = ({ children }) => {
   return (
-    <section>
+    <>
       <Navbar />
-      <div className="flex">
+      <section className="flex">
         <Sidebar />
         {children}
-      </div>
-    </section>
+      </section>
+    </>
   );
 };
 
-export default Layout;
+export default Container;
