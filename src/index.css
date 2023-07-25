@@ -1,22 +1,27 @@
-@import url('https://v1.fontapi.ir/css/Shabnam');
+@import url("https://v1.fontapi.ir/css/Shabnam");
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: Shabnam, sans-serif;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Shabnam, sans-serif;
 }
 
-body{
-    overflow-y: hidden;
+body {
+  overflow-y: hidden;
 }
 
-/* @layer base {
-    body {
-      @apply bg-[#eee];
-      @apply dark:bg-[#252525] dark:text-gray-50 bg-gray-50 text-gray-900;
-    }
-  } */
+@layer base {
+  body {
+    @apply dark:bg-[#001C30] dark:text-[#f3f6ff] bg-[#f3f6ff] text-[#001C30] transition-all ease-in;
+  }
+}
+
+@layer components{
+  .title{
+    @apply block lg:hidden text-xl pb-3 border-b border-gray-300 lg:text-2xl font-semibold
+  }
+}
